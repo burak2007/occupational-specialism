@@ -12,9 +12,7 @@ screenshot my drawsql diagram, ask chatgpt to make it into SQL code phpmyadmin a
 
 create a table, And then you can see the overview if you click on data dictionary 
 
-
-
-
-
-
 when using the code for the website, unzip the folder first then open folder on vscode
+
+video for tryout code
+https://youtu.be/oYRda7UtuhA?si=a8mM2ZRBVttBLLpM
