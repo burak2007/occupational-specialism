@@ -28,12 +28,14 @@ https://youtu.be/oYRda7UtuhA?si=a8mM2ZRBVttBLLpM
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
     </head>
     <body>
         <section class="header">
             <nav>
                 <a href="index.html"><img src="img/logo.png"></a>
-                <div class="nav-links">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="">HOME</a></li>
                         <li><a href="">ABOUT</a></li>
@@ -42,6 +44,7 @@ https://youtu.be/oYRda7UtuhA?si=a8mM2ZRBVttBLLpM
                         <li><a href="">CONTACT</a></li>
                     </ul>
                 </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
 
         <div class="text-box">
@@ -51,6 +54,61 @@ https://youtu.be/oYRda7UtuhA?si=a8mM2ZRBVttBLLpM
         </div>
 
         </section>
+    
+        <script>
+
+            var navLinks= document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+
+
+
+       <!---about--->
+
+       <section class="about">
+        <h1>About Us</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+        
+        <div class="row">
+            <div class="aboutpic">
+                <img src="img/pexels-cristian-rojas-8853502.jpg">
+            </div>
+
+        </div>
+    
+    
+    
+       </section>
+    
+
+
+       <!----service---->
+
+       <section class="service">
+            <h1>Services We Provide</h1>
+
+            <div class="Solar-panel-Consultation-And-Installation">
+                <h3>Solar panel Consultation And Installation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quidem enim. Velit ullam recusandae vero veritatis, ea fuga id illo iusto nulla quos explicabo fugit, molestiae, ipsa vel ad tenetur.</p>
+            </div>
+            <div class="Electric-Vehicle-Charging-Station">
+                <h3>Electric Vehicle Charging Station</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto at adipisci blanditiis molestiae consectetur veritatis incidunt numquam tenetur atque assumenda corporis, aliquid facilis, quae eaque aspernatur. Laborum voluptatum veritatis neque.</p>
+            </div>
+            <div class="Smart-Home-Energy-Management-System">
+                <h3>Smart Home Energy Management System</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda quia fugiat harum quod voluptatem ea earum similique excepturi, dolorem, non ipsam amet beatae atque voluptatibus modi repellendus architecto at?</p>
+            </div>
+
+       </section>
+    
     </body>
 
 </html>
@@ -145,6 +203,10 @@ nav .fa{
     display: none;
 }
 
+nav .fa{
+    display: none;
+}
+
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
@@ -158,9 +220,10 @@ nav .fa{
         height: 100vh;
         width: 200px;
         top: 0;
-        right: 0;
+        right: -200px;
         text-align: left;
         z-index: 2;
+        transition: 1s;
 
     }
     nav .fa{
@@ -174,4 +237,83 @@ nav .fa{
         padding: 30px;
         
     }
+}
+
+/*----service----*/
+
+.service{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.Solar-panel-Consultation-And-Installation{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+}
+.Electric-Vehicle-Charging-Station{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.Smart-Home-Energy-Management-System{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.Solar-panel-Consultation-And-Installation:hover{
+    box-shadow: 0 0 2opx 0px rgba(0,0,0,0.2);
+}
+.Electric-Vehicle-Charging-Station:hover{
+    box-shadow: 0 0 2opx 0px rgba(0,0,0,0.2);
+}
+.Smart-Home-Energy-Management-System:hover{
+    box-shadow: 0 0 2opx 0px rgba(0,0,0,0.2);
+}
+
+/*---about  us---*/
+
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.aboutpic{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
 }
