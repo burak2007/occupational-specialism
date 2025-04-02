@@ -133,14 +133,17 @@ https://youtu.be/oYRda7UtuhA?si=a8mM2ZRBVttBLLpM
                 <div class="Projects-col">
                     <img src="img/project.jpg">
                     <h3> Solar Panel installation on massive company building</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="Projects-col">
-                    <img src="img/project.jpg">
-                    <h3> Solar Panel installation on massive company building</h3>
+                    <img src="img/spWorkers.png">
+                    <h3> over 20,000 Solar Panels Installed this year</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="Projects-col">
-                    <img src="img/project.jpg">
-                    <h3> Solar Panel installation on massive company building</h3>
+                <div class="Projects-col"> 
+                    <img src="img/EVchargingpoint.png">
+                    <h3> New EV Charging Points installed in 50+ locations</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
         
@@ -148,10 +151,47 @@ https://youtu.be/oYRda7UtuhA?si=a8mM2ZRBVttBLLpM
         
         </section>
     
+
+        <section class="reviews">
+            <h1>What Our Clients Say</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="row">
+                <div class="reviews-col">
+                    <img src="img/user1.png">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est expedita exercitationem harum ex ea vero, perspiciatis reiciendis! Harum accusantium amet quidem ut illum dignissimos repellat, odit voluptates, facere, quo ad.</p>
+                    <h3> Ronaldo Akdag</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <div class="reviews-col">
+                    <img src="img/user2.png">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit id modi quo rerum eaque architecto quis at molestiae cumque aspernatur iusto, nesciunt blanditiis unde fugiat aut, quisquam sunt aperiam aliquid?</p>
+                    <h3> Quaresma Akdag</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+
+        </section>
+
+        <!--- SIGN UP SIGN IN --->
+<section class="sign up">
+    <h1>Sign Up Today</h1>
+</section>
+
+
+
+
+
     </body>
 
 </html>
-
 
 css
 
@@ -306,8 +346,8 @@ p{
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
+    margin: 5%;
+    padding: 10px 12px;
     box-sizing: border-box;
     transition: 0.5s;
 }
@@ -332,6 +372,7 @@ h3{
     margin: auto;
     text-align: center;
     padding-top: 50px;
+    justify-content: center;
 }
 .aboutpic{
     flex-basis: 32%;
@@ -340,10 +381,13 @@ h3{
     position: relative;
     overflow: hidden;
     width: 100%;
+    display: flex;
 }
 .aboutpic img{
     width: 100%;
-    display: block;
+    display: flex;
+    justify-content: center;
+
 }
 .layer{
     background: transparent;
@@ -382,12 +426,67 @@ h3{
     text-align: center;
     padding-top: 100px;
 }
+.Projects-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.Projects-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.Projects-col p{
+    padding: 0;
+}
+.Projects-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
 
 
 
 
-
-
+/*--- reviews ---*/
+.reviews{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.reviews-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.reviews-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.reviews-col p{
+    padding: 0;
+}
+.reviews-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.reviews-col .fa{
+    color: #f44336;
+}
+@media(max-width: 700px){
+    .reviews-col img{
+        margin-left: 5px;
+        margin-right: 15px;
+    }
+}
 
 
 
@@ -446,7 +545,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
 
 ABOUT PAGE
 
